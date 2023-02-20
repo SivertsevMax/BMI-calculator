@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMI_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstViewController" id="BYZ-38-t0r" userLabel="First View Controller" customClass="ViewController" customModule="BMI_calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,7 +44,7 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="je3-Si-dOS">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="je3-Si-dOS">
                                                                 <rect key="frame" x="166.66666666666663" y="0.0" width="166.33333333333337" height="35"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -52,7 +52,7 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MhP-Ye-v2m">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="MhP-Ye-v2m">
                                                         <rect key="frame" x="-2" y="35" width="337" height="36"/>
                                                         <color key="minimumTrackTintColor" red="0.3058823645" green="0.30196079609999998" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <connections>
@@ -84,7 +84,7 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0kg" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEE-Fa-ZIA">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 kg" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEE-Fa-ZIA">
                                                                 <rect key="frame" x="166.66666666666663" y="0.0" width="166.33333333333337" height="30"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -92,7 +92,7 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="23l-1P-Vpb">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="75" minValue="0.0" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="23l-1P-Vpb">
                                                         <rect key="frame" x="-2" y="30" width="337" height="31"/>
                                                         <color key="minimumTrackTintColor" red="0.3058823645" green="0.30196079609999998" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <connections>
@@ -167,6 +167,8 @@
                     </view>
                     <connections>
                         <outlet property="heightLabel" destination="je3-Si-dOS" id="b5f-tU-6c5"/>
+                        <outlet property="sliderHeight" destination="MhP-Ye-v2m" id="Fbl-cI-32D"/>
+                        <outlet property="sliderWeight" destination="23l-1P-Vpb" id="Hge-1h-Ucx"/>
                         <outlet property="weightLabel" destination="tEE-Fa-ZIA" id="W5d-e1-cYJ"/>
                     </connections>
                 </viewController>
@@ -174,10 +176,10 @@
             </objects>
             <point key="canvasLocation" x="116.79389312977099" y="-2.1126760563380285"/>
         </scene>
-        <!--Result View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="Gtb-nv-asR">
             <objects>
-                <viewController id="30D-zK-F3Y" userLabel="Result View Controller" sceneMemberID="viewController">
+                <viewController restorationIdentifier="SecondViewController" storyboardIdentifier="SecondViewController" id="30D-zK-F3Y" userLabel="Second View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mOx-cW-AoA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
