@@ -6,6 +6,7 @@ class ResultViewController: UIViewController {
     var BMIAdvice: String?
     var color: UIColor?
     
+    @IBOutlet weak var changeBackGround: UIImageView!
     @IBOutlet weak var showRecomendation: UILabel!
     @IBOutlet weak var showResult: UILabel!
     
@@ -13,6 +14,7 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
         showResult.text = BMIResult
         showRecomendation.text = BMIAdvice
+        changeBackGround.backgroundColor = color
         
     }
     

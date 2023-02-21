@@ -8,15 +8,15 @@ struct CalculatorBrain {
         let BMIValue = weight / pow(height, 2)
         
         if BMIValue < 18.5 {
-            BMIResult = BMI(value: BMIValue, advice: "", color: .blue)
+            BMIResult = BMI(value: BMIValue, advice: "", color: .systemCyan)
         } else if BMIValue < 24.9 {
-            BMIResult = BMI(value: BMIValue, advice: "Healthy", color: .green)
+            BMIResult = BMI(value: BMIValue, advice: "Healthy", color: .systemGreen)
         } else if BMIValue < 30 {
-            BMIResult = BMI(value: BMIValue, advice: "Overweight", color: .yellow)
+            BMIResult = BMI(value: BMIValue, advice: "Overweight", color: .systemYellow)
         } else if BMIValue < 40 {
-            BMIResult = BMI(value: BMIValue, advice: "Obese", color: .orange)
+            BMIResult = BMI(value: BMIValue, advice: "Obese", color: .systemOrange)
         } else {
-            BMIResult = BMI(value: BMIValue, advice: "Extremely obese", color: .red)
+            BMIResult = BMI(value: BMIValue, advice: "Extremely obese", color: .systemRed)
         }
         print(BMIResult?.value ?? 0.0)
         

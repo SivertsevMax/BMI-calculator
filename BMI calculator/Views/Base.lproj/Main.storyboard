@@ -273,6 +273,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ej3-uL-fP7"/>
                     <connections>
+                        <outlet property="changeBackGround" destination="tbn-XM-TZv" id="Bym-uV-6gd"/>
                         <outlet property="showRecomendation" destination="dPl-V9-NCJ" id="ga5-fD-g3b"/>
                         <outlet property="showResult" destination="ha7-Mc-KHg" id="J2K-Tl-d1C"/>
                     </connections>
