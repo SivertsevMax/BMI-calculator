@@ -128,7 +128,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="showResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KfV-L2-Ufg"/>
+                                                    <action selector="getResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fkB-od-og9"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -257,7 +257,6 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NME-Sp-PxF"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="NME-Sp-PxF" firstAttribute="trailing" secondItem="FzE-eb-qNZ" secondAttribute="trailing" id="281-Md-en6"/>
                             <constraint firstItem="z4X-DQ-jHp" firstAttribute="centerX" secondItem="mOx-cW-AoA" secondAttribute="centerX" id="3uu-Ty-wny"/>
