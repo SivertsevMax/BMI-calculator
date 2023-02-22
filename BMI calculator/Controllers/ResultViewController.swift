@@ -2,8 +2,8 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
-    var BMIResult: String?
-    var BMIAdvice: String?
+    var result: String?
+    var advice: String?
     var color: UIColor?
     
     @IBOutlet weak var changeBackGround: UIImageView!
@@ -12,8 +12,8 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        showResult.text = BMIResult
-        showRecomendation.text = BMIAdvice
+        showResult.text = result
+        showRecomendation.text = advice
         changeBackGround.backgroundColor = color
         
     }

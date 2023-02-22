@@ -2,6 +2,7 @@ import UIKit
 
 struct CalculatorBrain {
     var BMIResult: BMI?
+    var BMIAdvice: BMI?
     
     
     mutating func calculateBMI(weight: Float, height: Float) {
@@ -28,12 +29,10 @@ struct CalculatorBrain {
     }
     
     func getAdvice() -> String {
-        let BMIResult = BMIResult?.advice ?? "error"
-        return BMIResult
+        return BMIResult?.advice ?? "error"
     }
     
     func getColor() -> UIColor {
-        let color = BMIResult?.color ?? .tintColor
-        return color
-    }
+        return BMIResult?.color ?? .tintColor
+        }
 }
